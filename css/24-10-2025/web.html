@@ -1,0 +1,259 @@
+<html>
+    <head>
+       
+    
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <style>
+             
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+
+            }
+            .container{
+                margin: 0;
+
+            }
+            .root{
+                --bg: white;
+                --bb: orange;
+                --bv: rgb(255, 157, 0);
+            }
+            .header{
+               width: 100%;
+                height: 25px;
+                background-color: rgb(252, 101, 0);
+                text-align: center;
+            }
+            .header .details{
+                float: left;
+            }
+            .header .icon{
+                display: flex;
+                justify-content: right;
+                gap: 10px;
+                padding-right: 10px;
+            }
+            .head2{
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: space-between;
+                height: 50px;
+                background-color: rgba(42, 41, 41, 0.934);
+            }
+            .head2 .title{
+                color: rgb(255, 255, 255);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .head2 .nav {
+                display: flex;
+                gap: 20px;
+                padding: 1px;
+                
+            }
+            .head2 .nav a{
+                color: orange;
+
+            }
+            .head2 .nav a:hover{
+                border-radius: 5px;
+                filter: drop-shadow(0px 0px 1px rgba(252, 139, 2, 0.962));
+                color: white;
+                background: rgb(255, 145, 0);
+                transition: 1.2s ease; 
+            }
+            .content{
+                width: 100%;
+                height: 100vh;
+                background-image: url(asset/ap3.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-shadow: rgba(0, 0, 0, 0.538);
+                
+            }
+            .content .c1{
+                text-align: center;
+                color: rgba(63, 63, 63, 0.507);
+                font-size: larger;
+                font-weight: 20px;
+                
+
+            }
+            .l1{
+                font-size: 50px;
+            }
+            .l2{
+                font-size: 60px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .b1{
+               
+                padding: 5px 10px;
+                margin-top: 50px;
+                width: 10%;
+                background-color: rgba(0, 0, 0, 0.589);
+                box-shadow: inset -3px -3px rgba(0, 0, 0, 0.786);
+                border-radius: 5px;
+                color: white;  
+            }
+            .b1:hover{
+                cursor: pointer;
+                background-color: rgba(255,255,255,0.1);
+                color: white;
+            }
+            .b2{
+               
+                padding: 5px 10px;
+                margin-top: 50px;
+                width: 20%;
+                background-color: rgba(0, 0, 0, 0.589);
+                box-shadow: inset -3px -3px rgba(0, 0, 0, 0.786);
+                border-radius: 5px;
+                color: white;  
+            }
+            .b2:hover{
+                cursor: pointer;
+                background-color: rgba(255,255,255,0.1);
+                color: white;
+            }
+            .f1{
+                display: flex;
+                flex-direction: column;
+                height: 350px;
+                width: 650px;
+                border: 0px solid black;
+                margin: auto;
+                margin-top: 180px;
+                background-color: rgba(19, 18, 18, 0.689);
+              
+                box-shadow: inset -5px -5px rgba(0,0,0,0.5);
+                border-radius: 25px;
+                color: rgba(240, 248, 255, 0.952);
+                
+            }
+            .f1:hover{
+                cursor: pointer;
+                  background-color: rgba(0,0,0,0.5);
+                color: white;
+            }
+            .f1 .fh{
+                color: aliceblue;
+                border-bottom: 5px solid rgba(232, 232, 236, 0.573);
+                font-size: 30px;
+                text-align: center;
+                margin: 15px;
+            }
+            .box{
+                padding: 8px;
+                margin: 5px;
+                width: 25%;
+                border: 0;
+                outline: 0;
+                border-radius: 20px;
+                background-color: rgba(202, 197, 197, 0.444);
+                box-shadow: inset -2px -2px rgba(0, 0, 0, 0.607);
+                font-size: 1rem;
+                color: beige;
+            }
+            .bt3{
+                
+                padding: 5px 10px;
+                margin-top: 50px;
+                width: 50%;
+                background-color: rgba(0, 0, 0, 0.589);
+                box-shadow: inset -3px -3px rgba(0, 0, 0, 0.786);
+                border-radius: 5px;
+                color: white;  
+            }
+            .bt3:hover{
+                cursor: pointer;
+                background-color: rgba(255,255,255,0.1);
+                color: white;
+            }
+
+
+         </style>
+    </head>
+    <body>
+        <div class="=container">
+            <div class="header">
+                <div class="details">Phone.no: 9784512302 or EmailID: xxxx@gmail.com</div>
+                <div class="icon">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-youtube"></i></div>  
+                </div>
+            </div>
+            <div class="head2">
+            <div class="title"><h2>Vacation<span style="color: rgb(255, 170, 0);">Rental</span></h2></div>
+            <nav class="nav">
+                <a href="#" target="-blank"> HOME</a>
+                    <a href="#" target="-blank"> ABOUT</a>
+                    <a href="#" target="-blank"> SERVICES</a>
+                    <a href="#" target="-blank"> APARTMENTROOM</a>
+                    <a href="#" target="-blank"> BLOG</a>
+                    <a href="#" target="-blank"> CONTACT</a>
+            </nav>
+            </div>
+            <div class="content">
+                <div class="c1">
+                <p class="l1">Welcome to Vacation Rental</p>
+                <div class="l2"><h3>Rent an apartment for your vacation</h3></div>
+                <button class="b1">Learn more</button>
+                <button class="b2">Contact us</button>
+                </div>
+                <form class="f1">
+                    
+                        <div class="fh">Book Your Apartment</div>
+                        <div class="form">
+                        <div class="name">
+                            <label for="name">Name   :</label>
+                            <input type="text" class="box" placeholder="Enter your Name" required>
+                        </div>
+                        <div class="cc1">
+                            <label for="check-in"> check-in:</label>
+                            <input type="date" class="box">
+                            <label for="check-in"> check-out:</label>
+                            <input type="date" class="box">                            
+                        </div>
+                        <div class="adults">
+                            <label for="adults">adults:</label>
+                            <select name="adults" class="box">
+                            <option value="">0</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            </select>
+                            <label for="children">children:</label>
+                            <select name="children" class="box">
+                            <option value="">0</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            </select>
+                        </div>
+                        <div class="ph">
+                            <label for="phone">Phone no:</label>
+                            <input type=" " class="box" placeholder="Mobile Number" required>
+                            <label for="time">Time:</label>
+                            <input type="time" class="box">
+                        </div>
+                        </div>
+                        <button class="bt3">Book Apartment Now</button>
+                    
+                </form>
+                
+                
+            </div>
+        </div>
+
+    </body>
+</html>

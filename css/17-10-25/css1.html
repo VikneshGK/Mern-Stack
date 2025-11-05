@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>CSS</title>
+        <style>
+            * {
+                 text-decoration: none;     
+            }
+            .header{
+                display: flex;
+                justify-content: space-between;
+                background-color: rgb(225, 193, 255);
+                color: rgb(13, 114, 230);
+                
+            }
+            .title{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: larger;
+                
+
+
+            }
+            .Navigation{
+               
+                padding-right: 10px;
+                word-spacing: 50px;
+                font-family: Arial, Helvetica, sans-serif;        
+            }
+            .Navigation a:hover {
+                background: linear-gradient(to bottom right, Blue, violet);
+                
+            }
+            .button{
+                background-color: rgb(255, 255, 255);
+                
+                padding: 1em 2em;
+                border-radius: 5px;
+           
+            }
+            .texting{
+                background-color: rgb(206, 215, 246);
+                height: 80%;
+                width: 100%;
+                position: relative;
+            }
+            .maincontent{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                text-indent: 20px;
+                
+            }
+            .sub{
+                text-indent: 25px;
+                color: rgb(108, 103, 103, 50);
+            }
+            .start{
+                background-color: rgb(55, 113, 221);
+                border: none;
+                color: rgb(221, 216, 216);
+                padding: 1em 2em;
+                border-radius: 1000px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+            }
+            .start::after{
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 1000px;
+                background-image: linear-gradient(to bottom right, rgb(55, 87, 214), rgb(174, 83, 244));
+                z-index: -2;
+            }
+            
+            .start:hover{
+                z-index: 0;
+                box-shadow: 40px 0 100px rgb(86, 159, 255), -40 0 100px rgb(206, 100, 255);
+            }
+            .sample{
+                background: linear-gradient(to bottom right, rgb(126, 171, 230), rgb(176, 127, 255));
+                color: aliceblue;
+                padding: 1em 2em;
+                border-radius: 8px;
+
+            }
+            .ul{
+                display: flex;
+                font-size: smaller;
+                color: rgb(120, 121, 124);    
+                gap: 10px;    
+                list-style: none;       
+            }
+
+            .float{
+                position: absolute;
+                top: 20px;
+                right: 10px;
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+                border-radius: 10px;
+            }
+            .main{ 
+                font-family: Arial, Helvetica, sans-serif;
+                font: 20px;
+            }
+            .tip{
+                color: rgb(75, 82, 86);
+            }
+            .btn4{
+                background: linear-gradient(to bottom right, rgb(255, 82, 82), rgb(249, 178, 72));                
+                padding: 1em 2em;
+                border-radius: 1000px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+            
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="title">
+               <b>BlueLeaf UI</b>
+                </div>
+             <nav class="Navigation">
+                <a href="#" target="_blank"> Docs</a>
+                <a href="#" target="_blank"> Components</a>
+                <a href="#" target="_blank"> Pricing</a>
+                <button class="button"><a href="#" target="_blank_btn"> Get Started</a></button>
+             </nav>
+             
+        </div>
+        <div class="texting">
+            <h2 class="maincontent">Beautiful Components without modern layout modules</h2>
+            <p class="sub">A Demonstration UI made without CSS grid,Flex box, animation or CSS positioning -relies on 
+                float, inline block and classic responsive techniques</p>
+        <button class="start" ><a href="#" target="_blank_btn" style="color: beige;"> Start a Project</a></button>
+        <br>
+        <button class="sample"><a href="#" target="_blank_btn" style="color: beige;"> Explore samples</a></button>
+        <ul class="ul">
+            <li  class="num">1200+ Users</li>
+            <li  class="num">400+ Templates</li>
+            <li  class="num">100% Responsive Examples</li>
+            
+        </ul>
+        
+        <div class="float">
+            <h2 class="main">Getting Started</h2>
+            <p class="sub">Copy this HTML to being customizing-all essential Components in one page.</p>
+            <p class="tip"><b>Tips:</b>Use Media queries to adapt floats on smaller screen.</p>
+            <button class="btn4">Download</button>
+
+        </div>
+        </div>
+        
+    </body>
+</html>
